@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة أسدام الفنية للزجاج | ASDAM Technical Glass</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --font-ar: 'Cairo', sans-serif;
+            --font-en: 'Poppins', sans-serif;
+        }
+        body {
+            font-family: var(--font-ar);
+            transition: all 0.3s ease;
+        }
+        body[dir="ltr"] {
+            font-family: var(--font-en);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <header class="bg-white/95 backdrop-blur shadow-sm sticky top-0 z-50 border-b border-slate-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <div class="w-10 h-10 bg-gradient-to-tr from-cyan-600 to-blue-700 rounded-lg flex items-center justify-center shadow-md shadow-cyan-500/20">
+                    <span class="text-white font-bold text-xl tracking-wider">A</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-lg font-bold text-slate-900 tracking-wide leading-none mb-1">ASDAM</span>
+                    <span class="text-[10px] text-slate-500 font-semibold tracking-widest uppercase">Technical Glass</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 space-x-reverse text-sm font-semibold">
+                <a href="#home" data-key="nav-home" class="text-cyan-600 hover:text-cyan-700 transition-colors">الرئيسية</a>
+                <a href="#about" data-key="nav-about" class="text-slate-600 hover:text-cyan-600 transition-colors">من نحن</a>
+                <a href="#products" data-key="nav-products" class="text-slate-600 hover:text-cyan-600 transition-colors">المنتجات</a>
+                <a href="#portfolio" data-key="nav-portfolio" class="text-slate-600 hover:text-cyan-600 transition-colors">مشاريعنا</a>
+                <a href="#contact" data-key="nav-contact" class="text-slate-600 hover:text-cyan-600 transition-colors">اتصل بنا</a>
+            </nav>
+
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <button onclick="toggleLanguage()" id="lang-btn" class="text-xs font-bold text-slate-600 hover:text-cyan-600 border border-slate-200 px-3 py-1.5 rounded-md hover:bg-slate-50 transition-all cursor-pointer">English</button>
+                <a href="#contact" data-key="cta-quote" class="bg-gradient-to-r from-cyan-600 to-blue-600 text-white text-xs font-bold px-4 py-2 rounded-md hover:from-cyan-700 hover:to-blue-700 shadow-md shadow-cyan-600/10 transition-all">طلب تسعيرة</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="relative bg-slate-950 text-white py-36 md:py-48 flex items-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1920&q=80" alt="Architectural Glass" class="w-full h-full object-cover object-center opacity-30 transform scale-105 animate-pulse-slow">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/60 to-slate-950"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <span data-key="hero-badge" class="inline-block bg-cyan-500/10 text-cyan-400 text-xs font-bold px-4 py-1.5 rounded-full border border-cyan-500/20 uppercase tracking-widest mb-6">منذ عام 1990م</span>
+            <h1 id="hero-title" data-key="hero-title" class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 max-w-4xl mx-auto leading-tight">شركة أسدام الفنية للزجاج</h1>
+            <p id="hero-desc" data-key="hero-desc" class="text-base md:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">ما وراء الزجاج.. نبني الأحلام. جودة وثقة تمتد لأكثر من 30 عاماً في معالجة وتشكيل الزجاج المعماري والديكوري وتركيب الواجهات الإنشائية.</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#portfolio" data-key="hero-btn-1" class="w-full sm:w-auto bg-cyan-600 hover:bg-cyan-700 text-white px-8 py-3.5 rounded-lg font-bold shadow-lg shadow-cyan-600/20 transition-all text-center">استعرض مشاريعنا</a>
+                <a href="#about" data-key="hero-btn-2" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-3.5 rounded-lg font-bold backdrop-blur-sm transition-all text-center">اكتشف قصتنا</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-2 space-x-reverse">
+                        <div class="h-1 w-8 bg-cyan-600 rounded"></div>
+                        <span data-key="about-subtitle" class="text-cyan-600 text-sm font-bold uppercase tracking-wider">من نحن</span>
+                    </div>
+                    <h2 data-key="about-title" class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">رواد صناعة ومعالجة الزجاج المعماري</h2>
+                    <p data-key="about-p1" class="text-slate-600 leading-relaxed text-base">تأسست شركة أسدام الفنية للزجاج عام 1990م على يد رئيس مجلس الإدارة المهندس سعد حامد الثبيتي. ونجحت الشركة في بناء سمعة قوية وموثوقة داخل القطاعات الإنشائية والصناعية الكبرى في المملكة العربية السعودية.</p>
+                    <p data-key="about-p2" class="text-slate-600 leading-relaxed text-base">يضم مصنعنا المتكامل في عسفان أحدث الماكينات والأنظمة العالمية لتشكيل وتوريد الزجاج، لتقديم حلول شاملة تلبي متطلبات المشاريع الضخمة والأبراج السكنية والتجارية.</p>
+                    
+                    <div class="bg-cyan-50/50 border-r-4 border-cyan-600 p-5 rounded-l-xl my-6">
+                        <p data-key="about-quote" class="italic text-slate-700 font-medium text-sm leading-relaxed">"نحن نؤمن في أسدام بأن الثقة كالزجاج، إذا كُسرت لن تعود كما كانت، لذا نضع الجودة الفائقة والدقة الهندسية والالتزام بالمواعيد في مقدمة قيمنا الراسخة."</p>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-slate-100 rounded-3xl transform -rotate-2 z-0"></div>
+                    <div class="relative z-10 bg-slate-900 rounded-2xl overflow-hidden shadow-2xl group h-[400px]">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Factory Work" class="w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 p-8 flex flex-col justify-between">
+                            <div class="flex justify-between items-start">
+                                <div class="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/10 text-white text-center w-28">
+                                    <h3 class="text-3xl font-extrabold text-cyan-400 mb-1">30+</h3>
+                                    <p data-key="stat-1" class="text-[10px] uppercase font-bold text-slate-300">عاماً من الخبرة</p>
+                                </div>
+                                <div class="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/10 text-white text-center w-36">
+                                    <h3 class="text-2xl font-extrabold text-cyan-400 mb-1">JUMBO</h3>
+                                    <p data-key="stat-2" class="text-[10px] uppercase font-bold text-slate-300">قدرة معالجة ضخمة</p>
+                                </div>
+                            </div>
+                            <div class="text-white">
+                                <h4 data-key="stat-banner-title" class="text-lg font-bold mb-1">مصنع متكامل ونظم متطورة</h4>
+                                <p data-key="stat-banner-desc" class="text-xs text-slate-300">نعمل بأحدث خطوط الإنتاج والتقنيات لتوفير أعلى كفاءة ميكانيكية وحرارية للزجاج المعالج.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-24 bg-slate-100/60 border-y border-slate-200/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span data-key="prod-subtitle" class="text-cyan-600 text-xs font-bold uppercase tracking-widest bg-cyan-100/60 px-3 py-1 rounded">حلول هندسية متكاملة</span>
+                <h2 data-key="prod-title" class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">المنتجات والقدرات التصنيعية للمصنع</h2>
+                <p data-key="prod-desc" class="text-slate-600 text-sm md:text-base">نلبي كافة الاحتياجات الإنشائية من خلال تكنولوجيا متقدمة لمعالجة وتشكيل زجاج الأمان والواجهات الزجاجية.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 border border-slate-200/40 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-cyan-50 text-cyan-600 rounded-xl flex items-center justify-center font-bold text-lg mb-6 border border-cyan-100">HTG</div>
+                        <h3 data-key="p1-title" class="text-xl font-bold text-slate-900 mb-3">الزجاج المعالج حرارياً</h3>
+                        <p data-key="p1-desc" class="text-slate-600 text-sm leading-relaxed mb-6">زجاج سيكوريت مقسى بالكامل (Fully Tempered) ومدعّم حرارياً لمقاومة الأحمال والصدمات حتى 5 أضعاف، بطاقة إنتاجية متميزة تشمل الأحجام الضخمة (Jumbo Size) حتى 3210 × 6000 ملم.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-8 border border-slate-200/40 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg mb-6 border border-blue-100">IGU</div>
+                        <h3 data-key="p2-title" class="text-xl font-bold text-slate-900 mb-3">وحدات الزجاج العازل</h3>
+                        <p data-key="p2-desc" class="text-slate-600 text-sm leading-relaxed mb-6">أنظمة زجاجية مزدوجة وثلاثية عازلة بكفاءة فائقة لتقليل انتقال الحرارة، العزل الصوتي الفعال، والحماية من الأشعة فوق البنفسجية والشمسية، ومثالية تماماً لترشيد استهلاك الطاقة في أجواء الخليج.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-8 border border-slate-200/40 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center font-bold text-lg mb-6 border border-emerald-100">PP</div>
+                        <h3 data-key="p3-title" class="text-xl font-bold text-slate-900 mb-3">خدمات المعالجة المسبقة</h3>
+                        <p data-key="p3-desc" class="text-slate-600 text-sm leading-relaxed mb-6">مركز عمليات متقدم للقص الأوتوماتيكي بكافة الأشكال الهندسية، وعمل الفتحات، الثقب، شطف وصقل الحواف بدقة متناهية بالاعتماد على ماكينات التحكم الرقمي CNC والأنظمة المؤتمتة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span data-key="port-subtitle" class="text-cyan-600 text-xs font-bold uppercase tracking-widest bg-cyan-100/60 px-3 py-1 rounded">سابقة المشاريع</span>
+                <h2 data-key="port-title" class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">مشاريعنا الرسمية المنفذة</h2>
+                <p data-key="port-desc" class="text-slate-600 text-sm md:text-base">نفخر بتوريد وتركيب الأنظمة والواجهات الزجاجية والهياكل المعمارية لأبرز المباني والأبراج الطبية والتجارية بالمملكة.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-slate-50 border border-slate-100 rounded-2xl overflow-hidden shadow-sm group">
+                    <div class="h-64 overflow-hidden relative bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&w=600&q=80" alt="Oscar Tower" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90">
+                    </div>
+                    <div class="p-6">
+                        <h3 data-key="proj1-name" class="font-bold text-lg text-slate-900 mb-1">برج أوسكار (Oscar Tower)</h3>
+                        <p data-key="proj1-loc" class="text-xs text-slate-500 font-semibold uppercase">طريق الملك عبدالعزيز - جدة</p>
+                    </div>
+                </div>
+                <div class="bg-slate-50 border border-slate-100 rounded-2xl overflow-hidden shadow-sm group">
+                    <div class="h-64 overflow-hidden relative bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=600&q=80" alt="Jeddah Square" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90">
+                    </div>
+                    <div class="p-6">
+                        <h3 data-key="proj2-name" class="font-bold text-lg text-slate-900 mb-1">ساحة جدة (Jeddah Square)</h3>
+                        <p data-key="proj2-loc" class="text-xs text-slate-500 font-semibold uppercase">طريق الملك عبدالعزيز - جدة</p>
+                    </div>
+                </div>
+                <div class="bg-slate-50 border border-slate-100 rounded-2xl overflow-hidden shadow-sm group">
+                    <div class="h-64 overflow-hidden relative bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=600&q=80" alt="Downey Medical Center" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90">
+                    </div>
+                    <div class="p-6">
+                        <h3 data-key="proj3-name" class="font-bold text-lg text-slate-900 mb-1">مركز داوني الطبي (Downey Medical)</h3>
+                        <p data-key="proj3-loc" class="text-xs text-slate-500 font-semibold uppercase">منطقة عسير - أبها</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-slate-900 text-white relative">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <div class="space-y-6">
+                    <h2 data-key="cont-title" class="text-3xl md:text-4xl font-bold tracking-tight">تواصل مع الإدارة والمصنع مباشرة</h2>
+                    <p data-key="cont-desc" class="text-slate-400 text-sm md:text-base max-w-md">نحن هنا لمساعدتكم في دراسة المخططات الهندسية وتوريد الزجاج المعتمد لمشاريعكم بأعلى معايير الأمان والسلامة.</p>
+                    
+                    <div class="space-y-4 pt-4 text-sm text-slate-300">
+                        <div class="flex items-start">
+                            <span data-key="c-label-loc" class="font-bold text-white w-20 shrink-0">الموقع:</span>
+                            <span data-key="c-val-loc">المنطقة الصناعية بعسفان، طريق الهجرة، مكة المكرمة</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span data-key="c-label-phone" class="font-bold text-white w-20 shrink-0">المبيعات:</span>
+                            <span dir="ltr">+966 54 504 7777</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span data-key="c-label-phone2" class="font-bold text-white w-20 shrink-0">المكتب الفني:</span>
+                            <span dir="ltr">+966 55 277 7756</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span data-key="c-label-email" class="font-bold text-white w-20 shrink-0">البريد:</span>
+                            <span>saadco2002@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl text-slate-900 shadow-xl border border-slate-100">
+                    <h3 data-key="form-title" class="text-xl font-bold text-slate-900 mb-6">طلب عرض سعر للمشروع</h3>
+                    <form class="space-y-4" onsubmit="event.preventDefault(); alert('تم استلام طلبكم بنجاح وسيتواصل معكم المكتب الفني.');">
+                        <div>
+                            <label data-key="form-label-name" class="block text-xs font-semibold text-slate-700 mb-1">الاسم الكريم / الشركة</label>
+                            <input type="text" required class="w-full border border-slate-200 bg-slate-50 p-2.5 rounded-lg focus:outline-none focus:border-cyan-600 focus:bg-white transition-colors text-sm">
+                        </div>
+                        <div>
+                            <label data-key="form-label-phone" class="block text-xs font-semibold text-slate-700 mb-1">رقم الجوال للتواصل</label>
+                            <input type="tel" required class="w-full border border-slate-200 bg-slate-50 p-2.5 rounded-lg focus:outline-none focus:border-cyan-600 focus:bg-white transition-colors text-sm text-right" dir="auto">
+                        </div>
+                        <div>
+                            <label data-key="form-label-msg" class="block text-xs font-semibold text-slate-700 mb-1">مواصفات الزجاج المطلوبة والكمية</label>
+                            <textarea required class="w-full border border-slate-200 bg-slate-50 p-2.5 rounded-lg focus:outline-none focus:border-cyan-600 focus:bg-white transition-colors h-24 text-sm resize-none"></textarea>
+                        </div>
+                        <button type="submit" data-key="form-btn" class="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white py-3 rounded-lg text-sm font-bold shadow-md shadow-cyan-600/10 transition-all cursor-pointer">إرسال الطلب الفني</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-500 py-8 text-center text-xs border-t border-slate-900">
+        <p id="footer-text">&copy; 2026 شركة أسدام الفنية للزجاج. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        const translations = {
+            ar: {
+                "nav-home": "الرئيسية",
+                "nav-about": "من نحن",
+                "nav-products": "المنتجات",
+                "nav-portfolio": "مشاريعنا",
+                "nav-contact": "اتصل بنا",
+                "cta-quote": "طلب تسعيرة",
+                "hero-badge": "منذ عام 1990م",
+                "hero-title": "شركة أسدام الفنية للزجاج",
+                "hero-desc": "ما وراء الزجاج.. نبني الأحلام. جودة وثقة تمتد لأكثر من 30 عاماً في معالجة وتشكيل الزجاج المعماري والديكوري وتركيب الواجهات الإنشائية.",
+                "hero-btn-1": "استعرض مشاريعنا",
+                "hero-btn-2": "اكتشف قصتنا",
+                "about-subtitle": "من نحن",
+                "about-title": "رواد صناعة ومعالجة الزجاج المعماري",
+                "about-p1": "تأسست شركة أسدام الفنية للزجاج عام 1990م على يد رئيس مجلس الإدارة المهندس سعد حامد الثبيتي. ونجحت الشركة في بناء سمعة قوية وموثوقة داخل القطاعات الإنشائية والصناعية الكبرى في المملكة العربية السعودية.",
+                "about-p2": "يضم مصنعنا المتكامل في عسفان أحدث الماكينات والأنظمة العالمية لتشكيل وتوريد الزجاج، لتقديم حلول شاملة تلبي متطلبات المشاريع الضخمة والأبراج السكنية والتجارية.",
+                "about-quote": '"نحن نؤمن في أسدام بأن الثقة كالزجاج، إذا كُسرت لن تعود كما كانت، لذا نضع الجودة الفائقة والدقة الهندسية والالتزام بالمواعيد في مقدمة قيمنا الراسخة."',
+                "stat-1": "عاماً من الخبرة",
+                "stat-2": "قدرة معالجة ضخمة",
+                "stat-banner-title": "مصنع متكامل ونظم متطورة",
+                "stat-banner-desc": "نعمل بأحدث خطوط الإنتاج والتقنيات لتوفير أعلى كفاءة ميكانيكية وحرارية للزجاج المعالج.",
+                "prod-subtitle": "حلول هندسية متكاملة",
+                "prod-title": "المنتجات والقدرات التصنيعية للمصنع",
+                "prod-desc": "نلبي كافة الاحتياجات الإنشائية من خلال تكنولوجيا متقدمة لمعالجة وتشكيل زجاج الأمان والواجهات الزجاجية.",
+                "p1-title": "الزجاج المعالج حرارياً",
+                "p1-desc": "زجاج سيكوريت مقسى بالكامل (Fully Tempered) ومدعّم حرارياً لمقاومة الأحمال والصدمات حتى 5 أضعاف، بطاقة إنتاجية متميزة تشمل الأحجام الضخمة (Jumbo Size) حتى 3210 × 6000 ملم.",
+                "p2-title": "وحدات الزجاج العازل",
+                "p2-desc": "أنظمة زجاجية مزدوجة وثلاثية عازلة بكفاءة فائقة لتقليل انتقال الحرارة، العزل الصوتي الفعال، والحماية من الأشعة فوق البنفسجية والشمسية، ومثالية تماماً لترشيد استهلاك الطاقة في أجواء الخليج.",
+                "p3-title": "خدمات المعالجة المسبقة",
+                "p3-desc": "مركز عمليات متقدم للقص الأوتوماتيكي بكافة الأشكال الهندسية، وعمل الفتحات، الثقب، شطف وصقل الحواف بدقة متناهية بالاعتماد على ماكينات التحكم الرقمي CNC والأنظمة المؤتمتة.",
+                "port-subtitle": "سابقة المشاريع",
+                "port-title": "مشاريعنا الرسمية المنفذة",
+                "port-desc": "نفخر بتوريد وتركيب الأنظمة والواجهات الزجاجية والهياكل المعمارية لأبرز المباني والأبراج الطبية والتجارية بالمملكة.",
+                "proj1-name": "برج أوسكار (Oscar Tower)",
+                "proj1-loc": "طريق الملك عبدالعزيز - جدة",
+                "proj2-name": "ساحة جدة (Jeddah Square)",
+                "proj2-loc": "طريق الملك عبدالعزيز - جدة",
+                "proj3-name": "مركز داوني الطبي (Downey Medical)",
+                "proj3-loc": "منطقة عسير - أبها",
+                "cont-title": "تواصل مع الإدارة والمصنع مباشرة",
+                "cont-desc": "نحن هنا لمساعدتكم في دراسة المخططات الهندسية وتوريد الزجاج المعتمد لمشاريعكم بأعلى معايير الأمان والسلامة.",
+                "c-label-loc": "الموقع:",
+                "c-val-loc": "المنطقة الصناعية بعسفان، طريق الهجرة، مكة المكرمة",
+                "c-label-phone": "المبيعات:",
+                "c-label-phone2": "المكتب الفني:",
+                "c-label-email": "البريد:",
+                "form-title": "طلب عرض سعر للمشروع",
+                "form-label-name": "الاسم الكريم / الشركة",
+                "form-label-phone": "رقم الجوال للتواصل",
+                "form-label-msg": "مواصفات الزجاج المطلوبة والكمية",
+                "form-btn": "إرسال الطلب الفني",
+                "footer": "© 2026 شركة أسدام الفنية للزجاج. جميع الحقوق محفوظة."
+            },
+            en: {
+                "nav-home": "Home",
+                "nav-about": "About Us",
+                "nav-products": "Products",
+                "nav-portfolio": "Portfolio",
+                "nav-contact": "Contact Us",
+                "cta-quote": "Get a Quote",
+                "hero-badge": "Since 1990",
+                "hero-title": "ASDAM Technical Glass Company",
+                "hero-desc": "Beyond Glass.. Building Dreams. Over 30 years of deep-rooted excellence in architectural glass processing, safety glass, and structural facade installations.",
+                "hero-btn-1": "View Portfolio",
+                "hero-btn-2": "Discover Our Story",
+                "about-subtitle": "About Us",
+                "about-title": "Leaders in Architectural Glass Processing",
+                "about-p1": "Asdam Technical Glass Company was established in 1990 by the Chairman Eng. Saad Hamed Al-Thubaity. The company successfully built a reliable and robust reputation within major construction and industrial sectors in Saudi Arabia.",
+                "about-p2": "Our fully-equipped factory in Usfan hosts the latest international machinery to process and supply architectural glass solutions meeting the rigorous demands of large-scale commercial and residential landmarks.",
+                "about-quote": '"At Asdam, we strongly believe that trust is like glass; once broken, it can never be the same. Therefore, supreme quality, engineering accuracy, and strict timeliness sit at the core of our corporate values."',
+                "stat-1": "Years of Experience",
+                "stat-2": "Jumbo Size Capacity",
+                "stat-banner-title": "Integrated High-Tech Plant",
+                "stat-banner-desc": "Operating cutting-edge production lines to deliver maximum mechanical and thermal performance for processed safety glass.",
+                "prod-subtitle": "Integrated Engineering Solutions",
+                "prod-title": "Factory Products & Technical Capabilities",
+                "prod-desc": "Fulfilling architectural and structural safety requirements through advanced glass tempering and glazing technologies.",
+                "p1-title": "Heat-Treated Glass (HTG)",
+                "p1-desc": "Fully Tempered and Heat Strengthened safety glass engineered to withstand up to 5 times more mechanical and thermal stress, backed by Jumbo size processing capacities up to 3210 × 6000 mm.",
+                "p2-title": "Insulated Glass Units (IGU)",
+                "p2-desc": "Double and triple structural glazing units providing maximum thermal insulation, acoustic comfort, and optimal UV protection, perfectly tailored for energy conservation in the Gulf environment.",
+                "p3-title": "Pre-Processing Services",
+                "p3-desc": "An advanced operational facility delivering precise automatic cutting, complex drilling, safe edge grinding, and smooth high-end polishing driven by automated CNC tech.",
+                "port-subtitle": "Our Projects",
+                "port-title": "Executed Official Portfolio",
+                "port-desc": "We are proud to have manufactured and supplied structural glazing networks and architectural envelopes to leading commercial towers and medical complexes in the Kingdom.",
+                "proj1-name": "Oscar Tower",
+                "proj1-loc": "King Abdulaziz Road - Jeddah",
+                "proj2-name": "Jeddah Square",
+                "proj2-loc": "King Abdulaziz Road - Jeddah",
+                "proj3-name": "Downey Medical Center",
+                "proj3-loc": "Asir Region - Abha",
+                "cont-title": "Connect Directly with Factory Management",
+                "cont-desc": "Our engineering support unit is ready to study your architectural shop drawings and supply safety-certified glass variants.",
+                "c-label-loc": "Location:",
+                "c-val-loc": "Industrial Zone, Usfan, Makkah Region",
+                "c-label-phone": "Sales Unit:",
+                "c-label-phone2": "Technical Off:",
+                "c-label-email": "Email:",
+                "form-title": "Request a Technical RFQ",
+                "form-label-name": "Full Name / Company Name",
+                "form-label-phone": "Contact Mobile Number",
+                "form-label-msg": "Required Glass Specifications & Quantity",
+                "form-btn": "Submit Technical Request",
+                "footer": "© 2026 ASDAM Technical Glass Company. All Rights Reserved."
+            }
+        };
+
+        let currentLang = 'ar';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'ar' ? 'en' : 'ar';
+            const body = document.body;
+            const btn = document.getElementById('lang-btn');
+
+            if (currentLang === 'en') {
+                body.setAttribute('dir', 'ltr');
+                btn.innerText = 'العربية';
+            } else {
+                body.setAttribute('dir', 'rtl');
+                btn.innerText = 'English';
+            }
+
+            // Apply translations dynamically to all matching elements
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                if (translations[currentLang][key]) {
+                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                        // For placeholder handles if any used later
+                    } else {
+                        element.innerText = translations[currentLang][key];
+                    }
+                }
+            });
+
+            // Handle special non-data-key structural elements like standard footer text
+            document.getElementById('footer-text').innerText = translations[currentLang]['footer'];
+        }
+    </script>
+</body>
+</html>
